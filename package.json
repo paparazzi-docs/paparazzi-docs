@@ -2,8 +2,10 @@
   "name": "paparazzi-docs",
   "version": "0.1.0",
   "description": "Automate the process of updating documentation with new screenshots.",
-  "main": "index.js",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
+    "link": "npm link",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/paparazzi-docs/paparazzi-docs/issues"
   },
-  "homepage": "https://github.com/paparazzi-docs/paparazzi-docs#readme"
+  "homepage": "https://github.com/paparazzi-docs/paparazzi-docs#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.427.0",
+    "puppeteer": "^21.3.6"
+  }
 }
